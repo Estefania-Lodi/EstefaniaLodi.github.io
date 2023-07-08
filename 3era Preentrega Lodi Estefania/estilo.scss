@@ -1,0 +1,509 @@
+$color_1: rgb(19, 79, 69);
+$color_2: white;
+$color_3: black;
+$font-family_1: 'Montserrat', sans-serif;
+$background-color_1: rgb(19, 79, 69);
+$background-color_2: white;
+
+/* -----------------------Hasta aca responsive indexflex-------------------------- */
+
+/* -----------------------Hasta aca responsive de nosotros-------------------------- */
+
+/* -----------------------Hasta aca responsive productos-------------------------- */
+
+@keyframes Colores {
+	0%,100% {
+		filter: hue-rotate(0deg);
+	}
+	50% {
+		filter: hue-rotate(180deg);
+	}
+}
+/* -----------------------Hasta aca Responsive de contacto-------------------------- */
+* {
+	padding: 0;
+	margin: 0;
+}
+.header {
+	width: 100%;
+	height: 10%;
+}
+NAV {
+	float: right;
+	margin-top: 65px;
+	margin-right: 50px;
+}
+UL {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li {
+	float: left;
+	padding: 0 10px 0 10px;
+}
+a {
+	color: $color_1;
+	font-size: 23px;
+	text-decoration: none;
+	font-family: $font-family_1;
+	font-weight: bold;
+	&:hover {
+		background-color: $background-color_1;
+		color: $color_2;
+	}
+}
+.logo {
+	float: left;
+	position: absolute;
+}
+/* -----------------------Hasta aca el NAV-------------------------- */
+.grid-Layout {
+	width: 95%;
+	height: 600px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-areas: 'arriba arriba arriba' 
+                         'main main main' 
+                         'abajo lateral costado'
+                         'footer footer fotter';
+}
+.caja {
+	background-color: $background-color_2;
+	text-align: center;
+}
+.c1 {
+	width: 100%;
+	height: 600px;
+	grid-area: main;
+	background-image: url(estilos/crema.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: center;
+	p {
+		color: $color_3;
+		font-size: 230%;
+		font-family: $font-family_1;
+		text-align: center;
+		padding: 20%;
+	}
+}
+/* -----------------------Hasta aca el medio-------------------------- */
+.c2 {
+	width: 100%;
+	height: 500px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-area: abajo;
+	img {
+		width: 100%;
+		height: 400px;
+	}
+	a {
+		font-size: 170%;
+		font-family: $font-family_1;
+	}
+}
+/* -----------------------Hasta aca el Centro-------------------------- */
+footer {
+	grid-area: footer;
+}
+.derechos {
+	color: $color_1;
+	font-family: $font-family_1;
+	font-size: 140%;
+}
+.social {
+	margin: 50px;
+	p {
+		text-align: center;
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+}
+.links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	a {
+		margin: 0 20px;
+		i {
+			font-size: 40px;
+		}
+	}
+}
+/* -----------------------Hasta aca el Footer-------------------------- */
+.flex-container {
+	display: flex;
+	width: 100%;
+	height: 40%;
+	margin: 0 auto;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.cajaflex {
+	width: 570px;
+	height: 580px;
+	margin: 4%;
+}
+.c3 {
+	background-image: url(estilos/clienta.jpg);
+	background-size: cover;
+	background-repeat: no repeat;
+	position: relative;
+	margin-bottom: 10%;
+}
+.c4 {
+	h1 {
+		font-size: 20px;
+		text-align: center;
+		padding-top: 30%;
+		color: $color_1;
+		font-family: $font-family_1;
+	}
+}
+/* -----------------------Hasta aca nostros-------------------------- */
+.flex-container2 {
+	display: flex;
+	width: 100%;
+	height: 40%;
+	margin: 0 auto;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.cajaflex2 {
+	width: 600px;
+	height: 300px;
+	margin: 1%;
+	margin-top: 3%;
+}
+.c5 {
+	background-image: url(estilos/pelling.jpg);
+	background-size: cover;
+	background-repeat: no repeat;
+	position: relative;
+}
+.c6 {
+	h1 {
+		font-size: 25px;
+		text-align: left;
+		padding-top: 10%;
+		color: $color_3;
+		font-family: $font-family_1;
+	}
+	h2 {
+		font-size: 20px;
+		text-align: left;
+		color: $color_1;
+		font-family: $font-family_1;
+	}
+	h3 {
+		font-size: 15px;
+		text-align: left;
+		color: $color_3;
+		font-family: $font-family_1;
+	}
+	a {
+		display: block;
+		width: 90px;
+		font-family: $font-family_1;
+		background-color: $background-color_1;
+		border-radius: 10px;
+		padding: 10px 10px;
+		color: $color_2;
+		font-size: 12px;
+		text-align: center;
+		margin-top: 10px;
+	}
+}
+/* -----------------------Hasta aca productos-------------------------- */
+.flex-container3 {
+	display: flex;
+	width: 100%;
+	height: 40%;
+	margin: 0 auto;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.cajaflex3 {
+	width: 600px;
+	height: 280px;
+	margin: 1%;
+	margin-top: 4%;
+}
+.c7 {
+	background-image: url(estilos/perfilado.jpg);
+	background-size: cover;
+	background-repeat: no repeat;
+}
+.c8 {
+	h1 {
+		font-size: 25px;
+		text-align: left;
+		padding-top: 10%;
+		color: $color_3;
+		font-family: $font-family_1;
+	}
+	h2 {
+		font-size: 20px;
+		text-align: left;
+		color: $color_1;
+		font-family: $font-family_1;
+	}
+	h3 {
+		font-size: 15px;
+		text-align: left;
+		color: $color_3;
+		font-family: $font-family_1;
+	}
+	a {
+		display: block;
+		width: 90px;
+		font-family: $font-family_1;
+		background-color: $background-color_1;
+		border-radius: 10px;
+		padding: 10px 10px;
+		color: $color_2;
+		font-size: 13px;
+		text-align: center;
+		margin-top: 10px;
+	}
+}
+.flex-container4 {
+	display: flex;
+	width: 95%;
+	height: 80%;
+	margin: 0 auto;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+form {
+	margin: 35px;
+	width: 300px;
+	padding: 10px;
+	margin-left: 400px;
+	li {
+		+ {
+			li {
+				margin-top: 20px;
+			}
+		}
+	}
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+label {
+	display: inline-block;
+	width: 50px;
+	text-align: center;
+}
+input {
+	font-family: $font-family_1;
+	width: 330px;
+	box-sizing: border-box;
+	border: 2px solid rgb(19, 79, 69);
+}
+textarea {
+	font-family: $font-family_1;
+	width: 330px;
+	box-sizing: border-box;
+	border: 2px solid rgb(19, 79, 69);
+	vertical-align: top;
+	height: 250px;
+}
+h1 {
+	font-family: $font-family_1;
+	font-size: 20px;
+	color: $color_3;
+	text-align: center;
+}
+.button {
+	padding-left: 20px;
+	margin: left;
+}
+.formulario {
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+	font-family: $font-family_1;
+	color: $color_3;
+}
+.atras {
+	background-image: url(estilos/fondo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 95%;
+	width: 55%;
+	filter: hue-rotate();
+	animation-name: Colores;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+/* -----------------------Hasta aca contacto-------------------------- */
+
+@media only screen and (max-width: 550px) {
+	a {
+		font-size: 14px;
+		padding-bottom: 4px;
+	}
+	.c1 {
+		width: 95%;
+		height: 95%;
+		p {
+			font-size: 14px;
+		}
+	}
+	.header {
+		nav {
+			height: 30%;
+			padding-top: 10px;
+		}
+	}
+	.logo {
+		img {
+			width: 45%;
+			height: 25%;
+			margin-top: 20px;
+		}
+	}
+	.c2 {
+		grid-template-columns: repeat(1, 1fr);
+		img {
+			height: 80%;
+			width: 85%;
+			margin-left: 17%;
+		}
+		a {
+			font-size: 15px;
+			margin-left: 20%;
+		}
+	}
+	.derechos {
+		font-size: 14px;
+		margin-top: 580px;
+	}
+	.social {
+		p {
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+	}
+	.links {
+		a {
+			margin: 0 10px;
+			margin-bottom: -1090px;
+			i {
+				font-size: 26px;
+			}
+		}
+	}
+	.c3 {
+		height: 335px;
+		width: 350px;
+	}
+	.c4 {
+		h1 {
+			font-size: 12px;
+			margin-top: -150px;
+		}
+	}
+	.c5 {
+		height: 250px;
+		width: 450px;
+	}
+	.c6 {
+		h1 {
+			font-size: 15px;
+			margin-top: -20px;
+		}
+		h2 {
+			font-size: 13px;
+			margin-top: -20px;
+		}
+		h3 {
+			font-size: 12px;
+			margin-top: -20px;
+		}
+		a {
+			display: block;
+			width: 70px;
+			padding: 7px 7px;
+			font-size: 10px;
+			margin-top: 10px;
+		}
+	}
+	.c7 {
+		height: 250px;
+		width: 450px;
+		margin-top: 45%;
+	}
+	.c8 {
+		h1 {
+			font-size: 15px;
+			margin-top: -20px;
+		}
+		h2 {
+			font-size: 13px;
+			margin-top: -20px;
+		}
+		h3 {
+			font-size: 12px;
+			margin-top: -20px;
+		}
+		a {
+			display: block;
+			width: 70px;
+			padding: 7px 7px;
+			font-size: 10px;
+			margin-top: 10px;
+		}
+	}
+	form {
+		width: 45%;
+		height: 15%;
+		padding: 10px;
+		margin-left: 260px;
+		li {
+			+ {
+				li {
+					margin-top: 0px;
+				}
+			}
+		}
+	}
+	h1 {
+		font-size: 12px;
+		padding-bottom: 2px;
+	}
+	.atras {
+		height: 70%;
+		width: 95%;
+		margin-top: -90px;
+	}
+	input {
+		width: 145px;
+		box-sizing: border-box;
+		border: 2px solid rgb(19, 79, 69);
+	}
+	textarea {
+		width: 145px;
+		box-sizing: border-box;
+		border: 2px solid rgb(19, 79, 69);
+		vertical-align: top;
+		height: 100px;
+	}
+	.formulario {
+		font-size: 11px;
+		margin-top: -5px;
+	}
+}
+
